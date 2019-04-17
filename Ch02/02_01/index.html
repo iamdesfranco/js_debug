@@ -318,11 +318,14 @@
         $("#colorbox").swipe( {
           swipeLeft : function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.prev();
-			alert('swipe left');
+			console.log('swipe %s using %O event', direction, event);
+			// SETS Breakpoints in your code
+			debugger;
           },
           swipeRight:function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.next();
-			console.log('swipe right');
+			// console.log('swipe right');
+			console.log('%c swipe right', bigErrorStyle);
           }
         });
       }
